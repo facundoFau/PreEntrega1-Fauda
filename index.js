@@ -17,4 +17,4 @@ let cantidad = parseInt(prompt("Cantidad que quiere convertir de pesos Argentino
 
 let resultado = convertor(cantidad,operacion);
 let mensaje = "El resultado de la conversion es" +" "+ resultado;
-alert(mensaje)
+alert(mensaje);
