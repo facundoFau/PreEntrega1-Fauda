@@ -1,15 +1,15 @@
 //Conversor de monedas 
 
-let Valordolar = 314;
-let Valoreuro = 308;
 
-function convertor(cantidad,Valordolar,Valoreuro,operacion){
+
+
+function convertor(cantidad,operacion){
     switch(operacion){
         case "dolar":
-            return cantidad / Valordolar;
+            return cantidad / 314;
             break;
         case "euro":
-            return cantidad / Valoreuro;
+            return cantidad / 320;
             break;
         default:
             return "Operacion no valida";
@@ -19,5 +19,6 @@ function convertor(cantidad,Valordolar,Valoreuro,operacion){
 let cantidad = parseInt(prompt("Cantidad que quiere convertir de pesos Argentinos"));
 let operacion  = prompt("Elija entre Dolar y Euro") ;
 
-let resultado = calculadora(cantidad,Valordolar,Valoreuro,operacion);
+let resultado = convertor(cantidad,operacion);
 let mensaje = "El resultado de la conversion es" +" "+ resultado;
+alert(mensaje)
