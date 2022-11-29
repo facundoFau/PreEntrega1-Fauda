@@ -1,8 +1,4 @@
 //Conversor de monedas 
-
-
-
-
 function convertor(cantidad,operacion){
     switch(operacion){
         case "dolar":
@@ -16,8 +12,8 @@ function convertor(cantidad,operacion){
             break;
     }
 }
-let cantidad = parseInt(prompt("Cantidad que quiere convertir de pesos Argentinos"));
 let operacion  = prompt("Elija entre Dolar y Euro") ;
+let cantidad = parseInt(prompt("Cantidad que quiere convertir de pesos Argentinos"));
 
 let resultado = convertor(cantidad,operacion);
 let mensaje = "El resultado de la conversion es" +" "+ resultado;
